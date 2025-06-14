@@ -1,5 +1,4 @@
-timestamp,model_name,model_version,input_summary,prediction,true_label,confidence
-Input Summary,Prediction,Confidence,Timestamp,Model Version
+Input Summary,Prediction,Confidence,Timestamp,Model Name,Model Version
 "Age=52, Tenure=12 mo, MonthlyCharges=$113.85",Yes,0.8,2025-06-14T09:13:32.114117,ChurnPredictor v1.0
 "Age=33, Tenure=3 mo, MonthlyCharges=$82.61",Yes,0.94,2025-06-14T09:13:32.114144,ChurnPredictor v1.0
 "Age=54, Tenure=6 mo, MonthlyCharges=$118.3",No,0.91,2025-06-14T09:13:32.114157,ChurnPredictor v1.0
