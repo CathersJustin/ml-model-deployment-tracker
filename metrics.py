@@ -6,9 +6,9 @@ def compute_classification_metrics(y_true, y_pred):
     """Return accuracy, precision, recall and f1 as a dict."""
     return {
         "accuracy": accuracy_score(y_true, y_pred),
-        "precision": precision_score(y_true, y_pred, zero_division=0),
-        "recall": recall_score(y_true, y_pred, zero_division=0),
-        "f1": f1_score(y_true, y_pred, zero_division=0),
+        "precision": precision_score(y_true, y_pred, pos_label="Yes", zero_division=0),
+        "recall": recall_score(y_true, y_pred, pos_label="Yes", zero_division=0),
+        "f1": f1_score(y_true, y_pred, pos_label="Yes", zero_division=0),
     }
 
 
