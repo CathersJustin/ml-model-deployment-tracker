@@ -51,7 +51,7 @@ with performance_tab:
     st.subheader("Model Performance")
     if not predictions.empty:
         metrics_list = []
-        for (name, version), group in predictions.groupby(["Model Name", "Model Version"]):
+        for (name, version), group in predictions.groupby(["model_name", "model_version"]):
             m = metrics.compute_classification_metrics(group["true_label"], group["prediction"])
             m.update({"model_name": name, "model_version": version})
             metrics_list.append(m)
